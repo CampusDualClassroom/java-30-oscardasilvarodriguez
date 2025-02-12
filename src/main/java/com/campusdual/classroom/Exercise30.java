@@ -12,9 +12,8 @@ public class Exercise30 {
 
     public static void main(String[] args) {
         try {
-            System.out.println(divisionWithCustomException(10, 2));
+            System.out.println(divisionWithCustomException(10, 0));
         } catch (DivisionByZeroException e) {
-            System.out.println(e.getMessage());
             e.printStackTrace();
         }finally{
         System.out.println("Programa terminado.");
